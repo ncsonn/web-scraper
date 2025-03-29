@@ -25,18 +25,18 @@ Dynamic Web Scraping API with Python and Playwright
     uvicorn main:app --host 0.0.0.0 --port 8000
     ```
 
-    - Check if the server is running:
+- Check if the server is running:
     ```bash
     curl -X GET http://localhost:8000/health-check
     ```
 
 4. **Access the endpoints:**
-    - Get website HTML:
+- Get website HTML:
     ```bash
     curl -X GET http://localhost:8000/scrape/html?url=https://example.com/
     ```
 
-    - Get website screenshot:
+- Get website screenshot:
     ```bash
     curl -X GET http://localhost:8000/scrape/image?url=https://playwright.dev/
     ```
